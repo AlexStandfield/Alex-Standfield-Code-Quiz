@@ -1,0 +1,13 @@
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.high-scores {
+    margin-left: 50px;
+}
+.timer-box {
+    margin-right: 100px;
+}
