@@ -4,10 +4,95 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    border-bottom: solid 1px black;
 }
 .high-scores {
     margin-left: 50px;
 }
 .timer-box {
     margin-right: 100px;
+    display: flex;
+}
+
+.btn {
+    background-color: #351c75;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover {
+    background-color: white;
+    color: #351c75;
+    border: solid 2px #351c75;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.quiz-info div p {
+    font-size: 20px;
+}
+.header {
+    font-size: 50px;
+}
+
+/* Question Styling */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.question-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 750px;
+    border-bottom: solid 1px black;
+}
+.answer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.answers {
+    background-color: #351c75;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+}
+
+.right-wrong-box {
+    display: flex;
+    justify-content: center;
+}
+.right-wrong {
+    font-size: 30px;
+}
+
+#finish-quiz-box {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
