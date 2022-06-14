@@ -1,0 +1,50 @@
+/* Main styling */
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+}
+.high-scores {
+    margin-left: 50px;
+}
+.timer-box {
+    margin-right: 100px;
+    display: flex;
+}
+.title {
+    font-size: 50px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.quiz-info div p {
+    font-size: 20px;
+}
+
+/* Button Styling for all Buttons */
+.btn {
+    background-color: #351c75;
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+}
+.btn:hover {
+    background-color: white;
+    color: #351c75;
+    border: solid 2px #351c75;
+}
