@@ -35,6 +35,20 @@ let answerQuestion = function () {
         rightOrWrong.textContent = 'Wrong!'
         i++;
         getQuestions();
+        timeLeft = timer.textContent - 10;
+        timer.textContent = timer.textContent - 10;
+        clearInterval(downloadTimer);
+        let t = 10;
+        downloadTimer = setInterval(function(){
+            if(timer.textContent <= 0){
+                clearInterval(downloadTimer);
+                rightOrWrong.textContent = 'Times Up!'
+                finishQuizBox.style.display = 'flex';
+                timer.textContent = 1;
+            }
+            timer.textContent -= 1;
+            timeleft -= 1;
+        }, 1000);
     }
 };
 
