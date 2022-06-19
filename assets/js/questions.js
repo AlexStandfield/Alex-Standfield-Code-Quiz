@@ -14,10 +14,11 @@ let downloadTimer = setInterval(function(){
 let getQuestions = function () {
     if (i <=4) {
         question.textContent = questionsArr[i].question
-        answer1.textContent = questionsArr[i].correctAnswer
-        answer2.textContent = questionsArr[i].a1
-        answer3.textContent = questionsArr[i].a2
-        answer4.textContent = questionsArr[i].a3
+        let answers = [ questionsArr[i].a1, questionsArr[i].a2, questionsArr[i].a3, questionsArr[i].correctAnswer]
+        let shuffled = shuffle(answers);
+        for(let i = 0; i <= 3; i++){
+            allAnswers[i].textContent = shuffled[i]
+        }
     } else {
         finishQuizBox.style.display = 'flex';
     }
@@ -35,7 +36,7 @@ let answerQuestion = function () {
         rightOrWrong.textContent = 'Wrong!'
         i++;
         getQuestions();
-        timeLeft = timer.textContent - 10;
+        timeleft = timer.textContent - 10;
         timer.textContent = timer.textContent - 10;
         clearInterval(downloadTimer);
         let t = 10;

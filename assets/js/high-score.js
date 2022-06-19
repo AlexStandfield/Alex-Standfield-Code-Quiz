@@ -8,11 +8,11 @@ let savedInitials
 let listItemEl
 
 let getHighScore = function () {
+    console.log(localStorage.getItem("highScores"))
     highScores = localStorage.getItem("highScores");
     highScores = JSON.parse(highScores);
     console.log(highScores);
 
-    
     if (highScores === null) {
         return false
     } else {
@@ -28,17 +28,6 @@ let getHighScore = function () {
             highScoreList.appendChild(listItemEl);
         }
     }
-
-
-    // savedScore = highScores[0].score;
-    // savedInitials = highScores[0].initials;
-    // console.log(savedScore, savedInitials);
-
-    // let listItemEl = document.createElement('li');
-    // listItemEl.className = "high-score";
-    // listItemEl.textContent = savedInitials + ' - ' + savedScore;
-
-    // highScoreList.appendChild(listItemEl);
 };
 
 let clearHighScores = function () {
