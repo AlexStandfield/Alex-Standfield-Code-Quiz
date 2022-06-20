@@ -35,7 +35,7 @@ let questionsArr = [
     },
     {
         question: 'Arrays in Javascript can be used to store ____.',
-        correctAnswer: 'All of the below',
+        correctAnswer: 'All Answers',
         a1: 'Numbers and Strings',
         a2: 'Other Arrays',
         a3: 'Booleans'
