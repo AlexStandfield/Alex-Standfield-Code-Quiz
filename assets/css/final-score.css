@@ -1,8 +1,12 @@
 /* Final Score Page Styling */
 .submit-final-score {
-   position: absolute;
-   top: 250px;
-   left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.submit-final-score-box {
+
 }
 .submit-final-score div h1 {
     font-size: 75px;
